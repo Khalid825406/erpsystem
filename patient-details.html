@@ -1,0 +1,2738 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DreamsEMR is a flexible, powerful, modern, and responsive Bootstrap 5 admin template with endless potential.">
+    <meta name="keywords" content="DreamsEMR admin template, admin template, dashboard template, responsive admin template, medical admin template, web app">
+    <meta name="author" content="dreamstechnologies">	
+	
+    <title>Patient Details | Preadmin EMR - Responsive Bootstrap 5 Medical Admin Template</title>
+	
+	<!-- Icon -->
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png" sizes="180x180">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- Theme Settings Js -->
+    <script src="assets/js/theme-script.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Tabler Icon CSS -->
+    <link rel="stylesheet" href="assets/plugins/tabler-icons/tabler-icons.min.css">
+
+    <!-- Bootstrap Tagsinput CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+
+    <!-- Select2 CSS -->
+    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
+
+    <!-- Datetimepicker CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+
+    <!-- Owl carousel CSS -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+
+        <!-- Header -->
+        <div class="header">
+
+            <!-- Logo -->
+            <div class="header-left active">
+                <a href="index.html" class="logo logo-normal">
+                    <img src="assets/img/logo.svg" alt="Img">
+                </a>
+                <a href="index.html" class="logo-small">
+                    <img src="assets/img/logo-small.svg" alt="Img">
+                </a>
+                <a href="index.html" class="dark-logo">
+                    <img src="assets/img/logo-white.svg" alt="Logo">
+                </a>
+                <a id="toggle_btn" href="javascript:void(0);">
+                    <i class="ti ti-arrow-bar-to-left"></i>
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+                <span class="bar-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </a>
+            <div class="header-user">
+                <div class="nav user-menu">
+                    <!-- Search -->
+                    <div class="nav-item nav-search-inputs me-auto">
+                        <div class="top-nav-search">
+                            <a href="javascript:void(0);" class="responsive-search">
+                                <i class="fa fa-search"></i>
+                            </a>
+                            <form action="index.html">
+                                <div class="position-relative">
+                                    <input type="text" class="form-control" placeholder="Name, Medical ID or Number">
+                                    <div class="input-addon">
+                                        <span><i class="ti ti-command"></i></span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- /Search -->
+
+                    <div class="nav-item dropdown ms-0">
+                        <a href="javascript:void(0);" class="btn btn-outline-light bg-white btn-icon me-1" data-bs-toggle="dropdown"><i class="ti ti-list-details"></i></a>
+                        <div class="dropdown-menu dropdown-lg">
+                            <div class="card mb-0 border-0">
+                                <div class="card-body">
+                                    <a href="appointments.html" class="dropdown-item border rounded p-3 d-flex align-items-center justify-content-between mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <span class="me-3">
+                                                <i class="ti ti-calendar-share fs-24 text-primary"></i>
+                                            </span>
+                                            <div>
+                                                <h5 class="fw-semibold mb-1">Appointments</h5>
+                                                <p>View all the appointments</p>
+                                            </div>
+                                        </div>
+                                        <span class="d-flex align-items-center justify-content-between"><i class="ti ti-arrow-bar-to-right fs-20"></i></span>
+                                    </a>
+                                    <a href="add-patient.html" class="dropdown-item border rounded p-3 d-flex align-items-center justify-content-between mb-3">
+                                        <div class="d-flex align-items-center">
+                                            <span class="me-3">
+                                                <i class="ti ti-user-plus fs-24 text-primary"></i>
+                                            </span>
+                                            <div>
+                                                <h5 class="fw-semibold mb-1">New Patient</h5>
+                                                <p>Add new patient</p>
+                                            </div>
+                                        </div>
+                                        <span class="d-flex align-items-center justify-content-between"><i class="ti ti-arrow-bar-to-right fs-20"></i></span>
+                                    </a>
+                                    <a href="pharmacy.html" class="dropdown-item border rounded p-3 d-flex align-items-center justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <span class="me-3">
+                                                <i class="ti ti-pill fs-24 text-primary"></i>
+                                            </span>
+                                            <div>
+                                                <h5 class="fw-semibold mb-1">Pharmacy</h5>
+                                                <p>View all the Medicines in the pharmacy</p>
+                                            </div>
+                                        </div>
+                                        <span class="d-flex align-items-center justify-content-between"><i class="ti ti-arrow-bar-to-right fs-20"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pe-1 mb-xl-0">
+                        <a href="javascript:void(0);" class="btn btn-outline-light bg-white btn-icon me-1" id="btnFullscreen">
+                            <i class="ti ti-minimize"></i>
+                        </a>
+                    </div>
+                    <!-- Notifications -->
+                    <div class="dropdown pe-1 mb-xl-0">
+                        <a href="javascript:void(0);" class="btn btn-outline-light bg-white btn-icon position-relative me-1" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            <i class="ti ti-bell"></i>
+                            <span class="avatar avatar-xs bg-danger rounded-circle noti-badge">5</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end dropdown-lg">
+                            <div class="card mb-0 border-0">
+                                <div class="card-header">
+                                    <h4>Notifications</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between notification-tab border-bottom mb-3">
+                                        <ul class="nav nav-pills" id="pills-noti-tab" role="tablist">
+                                            <li class="nav-link active" id="pills-noti-today-tab" data-bs-toggle="pill" data-bs-target="#pills-noti-today" role="tab" aria-controls="pills-noti-today" aria-selected="false">
+												<a href="javascript:void(0);">Today<span class="avatar avatar-xs rounded-circle bg-danger wh-15 ms-1">5</span></a>
+                                            </li>
+                                            <li class="nav-link" id="pills-noti-previous-tab" data-bs-toggle="pill" data-bs-target="#pills-noti-previous" role="tab" aria-controls="pills-noti-previous" aria-selected="false">
+												<a href="javascript:void(0);">Previous</a>
+                                            </li>
+                                        </ul>
+                                        <a href="javascript:void(0);" class="text-danger fw-normal">Clear all</a>
+                                    </div>
+                                    <div class="tab-content pt-0">
+                                        <div class="tab-pane fade show active" id="pills-noti-today" role="tabpanel" aria-labelledby="pills-noti-today-tab">
+                                            <div class="d-block notification-scroll">
+                                                <a href="activities.html">
+                                                    <div class="d-flex border-bottom pb-2 mb-2">
+                                                        <span class="avatar avatar-md flex-shrink-0 me-2">
+                                                            <img src="assets/img/patients/patient-01.jpg" alt="Profile">
+                                                        </span>
+                                                        <div class="flex-grow-1">
+                                                            <p class=" mb-1"><span class="fw-bold">John Doe</span> added new task Patient appointment booking</p>
+                                                            <p class="fs-12">5 mins ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="activities.html">
+                                                    <div class="d-flex  border-bottom pb-2 mb-2">
+                                                        <span class="avatar avatar-md flex-shrink-0 me-2">
+                                                            <img src="assets/img/patients/patient-14.jpg" alt="Profile">
+                                                        </span>
+                                                        <div class="flex-grow-1">
+                                                            <p class=" mb-1"><span class="fw-bold">Maria</span> completed the task patient & Doctor video conferencing</p>
+                                                            <p class="fs-12">5 mins ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="activities.html">
+                                                    <div class="d-flex  border-bottom pb-2 mb-2">
+                                                        <span class="avatar avatar-md flex-shrink-0 me-2">
+                                                            <img src="assets/img/patients/patient-15.jpg" alt="Profile">
+                                                        </span>
+                                                        <div class="flex-grow-1">
+                                                            <p class=" mb-1">A new patient record for <span class="fw-bold">Jane Williams</span> has been added to the system.</p>
+                                                            <p class="fs-12">2 hrs ago</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="activities.html">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-md flex-shrink-0 me-2">
+                                                            <img src="assets/img/patients/patient-16.jpg" alt="Profile">
+                                                        </span>
+                                                        <div class="flex-grow-1">
+                                                            <p class=" mb-1"><span class="fw-bold">Ann</span> cancelled her appointment scheduled for February 5, 2024</p>
+                                                            <p class="fs-12">09:45 AM</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade" id="pills-noti-previous" role="tabpanel" aria-labelledby="pills-noti-previous-tab">
+                                            <div class="d-block notification-scroll">
+                                                <a href="activities.html">
+                                                    <div class="d-flex  border-bottom pb-2 mb-2">
+                                                        <span class="avatar avatar-md flex-shrink-0 me-2">
+                                                            <img src="assets/img/patients/patient-02.jpg" alt="Profile">
+                                                        </span>
+                                                        <div class="flex-grow-1">
+                                                            <p class=" mb-1"><span class="fw-bold">Richard </span>added new task Patient appointment booking</p>
+                                                            <p class="fs-12">14 Mar 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="activities.html">
+                                                    <div class="d-flex  border-bottom pb-2 mb-2">
+                                                        <span class="avatar avatar-md flex-shrink-0 me-2">
+                                                            <img src="assets/img/patients/patient-03.jpg" alt="Profile">
+                                                        </span>
+                                                        <div class="flex-grow-1">
+                                                            <p class=" mb-1"><span class="fw-bold">Louella</span> completed the task patient & Doctor video conferencing</p>
+                                                            <p class="fs-12">13 Mar 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="activities.html">
+                                                    <div class="d-flex  border-bottom pb-2 mb-2">
+                                                        <span class="avatar avatar-md flex-shrink-0 me-2">
+                                                            <img src="assets/img/patients/patient-04.jpg" alt="Profile">
+                                                        </span>
+                                                        <div class="flex-grow-1">
+                                                            <p class=" mb-1">A new patient record for Thomas has been added to the system.</p>
+                                                            <p class="fs-12">12 Mar 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a href="activities.html">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-md flex-shrink-0 me-2">
+                                                            <img src="assets/img/patients/patient-09.jpg" alt="Profile">
+                                                        </span>
+                                                        <div class="flex-grow-1">
+                                                            <p class="mb-1">Cassandra cancelled her appointment scheduled for February 5, 2024</p>
+                                                            <p class="fs-12">11 Mar 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer d-flex align-items-center justify-content-between">
+                                    <a href="javascript:void(0);" class="text-primary fw-semibold"><i class="ti ti-checks me-2"></i>Mark all as read</a>
+                                    <a href="activities.html" class="fw-semibold">View all</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Notifications -->
+                    <div class="pe-1 mb-xl-0">
+                        <a href="chat.html" class="btn btn-outline-light bg-white btn-icon position-relative me-1">
+                            <i class="ti ti-brand-wechat"></i>
+                            <span class="status online"></span>
+                        </a>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <a href="javascript:void(0);" class="nav-link p-0" data-bs-toggle="dropdown">
+                            <span class="d-flex align-items-center">
+                                <span class="avatar avatar-md wh-37 rounded">
+                                    <img src="assets/img/patients/patient-19.jpg" alt="Profile" class="img-fluid">
+                                </span>
+
+                            </span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div>
+                                <div class="p-3 d-flex align-items-center">
+                                    <span class="avatar avatar-md wh-37 rounded me-2">
+                                        <img src="assets/img/patients/patient-19.jpg" alt="Profile">
+                                    </span>
+                                    <div>
+                                        <h5 class="fw-semibold">Emily Hamilton</h5>
+                                        <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9bfef6f2f7e2f3faf6f2f7eff4f5dbfee3faf6ebf7feb5f8f4f6">[email&#160;protected]</a></p>
+                                    </div>
+                                </div>
+                                <hr class="m-0">
+                                <div class="py-2">
+                                    <a class="dropdown-item" href="patient-details.html"><i class="ti ti-user-circle me-2"></i>My Profile</a>
+                                    <a class="dropdown-item" href="notification-settings.html"><i class="ti ti-bell me-2"></i>Notification Settings</a>
+                                    <a class="dropdown-item" href="settings.html"><i class="ti ti-settings me-2"></i>General Settings</a>
+                                </div>
+                                <hr class="m-0">
+                                <a class="dropdown-item" href="login.html"><i class="ti ti-settings me-2"></i>Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="dropdown mobile-user-menu">
+                <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="patient-details.html">My Profile</a>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </div>
+            <!-- /Mobile Menu -->
+        </div>
+        <!-- /Header -->
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li>
+                            <h6 class="submenu-hdr">Main</h6>
+                            <ul>
+                                <li>
+                                    <a href="index.html"><i class="ti ti-layout-dashboard"></i><span>Dashboard</span></a>
+                                </li>
+                                <li class="submenu ">
+                                    <a href="javascript:void(0);"><i class="ti ti-brand-airtable"></i><span>Application</span><span class="menu-arrow"></span></a>
+                                    <ul>
+                                        <li><a href="chat.html">Chat</a></li>
+                                        <li class="submenu submenu-two">
+                                            <a href="javascript:void(0);">Call<span class="menu-arrow inside-submenu"></span></a>
+                                            <ul>
+                                                <li><a href="video-call.html">Video Call</a></li>
+                                                <li><a href="audio-call.html">Audio Call</a></li>
+                                                <li><a href="call-history.html">Call History</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="calendar.html">Calendar</a></li>
+                                        <li><a href="todo.html">To Do</a></li>
+                                        <li><a href="notes.html">Notes</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);" class="active subdrop"><i class="ti ti-users"></i><span>Patients</span><span class="menu-arrow"></span></a>
+                                    <ul>
+                                        <li><a href="patients.html">All Patients</a></li>
+                                        <li><a href="patient-list.html">Patient List</a></li>
+                                        <li><a href="patient-details.html" class="active">Patient Details</a></li>
+                                        <li><a href="search-patients.html">Search Patients</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);"><i class="ti ti-users-plus"></i><span>Doctors</span><span class="menu-arrow"></span></a>
+                                    <ul>
+                                        <li><a href="doctors.html">All Doctors</a></li>
+                                        <li><a href="doctor-list.html">Doctor List</a></li>
+                                        <li><a href="doctor-details.html">Doctor Details</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="visits.html"><i class="ti ti-e-passport"></i><span>Visits</span></a>
+                                </li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);"><i class="ti ti-calendar-bolt"></i><span> Appointments</span><span class="menu-arrow"></span></a>
+                                    <ul>
+                                        <li><a href="appointments.html">All Appointments</a></li>
+                                        <li><a href="appointments-transactions.html">Transactions</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="laboratory.html"><i class="ti ti-test-pipe"></i><span>Laboratory</span></a></li>
+                                <li class="message-active-dot "><a href="chat.html"><i class="ti ti-brand-hipchat"></i><span>Messages</span></a></li>
+                                <li><a href="contact.html"><i class="ti ti-user-star"></i><span>Contacts</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="submenu-hdr">Medical</h6>
+                            <ul>
+                                <li><a href="lab-results.html"><i class="ti ti-test-pipe-2"></i><span>Lab Results</span></a></li>
+                                <li><a href="medical-records.html"><i class="ti ti-file-description"></i><span>Medical Records</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="submenu-hdr">Manage</h6>
+                            <ul>
+                                <li><a href="pharmacy.html"><i class="ti ti-prescription"></i><span>Pharmacy</span></a></li>
+                                <li><a href="staff.html"><i class="ti ti-users-group"></i><span>Staff</span></a></li>
+                                <li><a href="settings.html"><i class="ti ti-settings"></i><span>Settings</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="submenu-hdr">Pages</h6>
+                            <ul>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                        <i class="ti ti-lock-square-rounded"></i><span>Authentication</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="login.html">Login</a></li>
+                                        <li><a href="register.html">Register</a></li>
+                                        <li><a href="forgot-password.html">Forgot Password</a></li>
+                                        <li><a href="change-password.html">Change Password</a></li>
+                                        <li><a href="lock-screen.html">Lock Screen</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="error-404.html"><i class="ti ti-error-404"></i><span>Error 404</span></a></li>
+                                <li><a href="blank-page.html"><i class="ti ti-brand-nuxt"></i><span>Blank Page</span></a></li>
+                                <li><a href="coming-soon.html"><i class="ti ti-device-laptop"></i><span>Coming Soon</span></a></li>
+                                <li><a href="under-maintenance.html"><i class="ti ti-moneybag"></i><span>Under Maintenance</span></a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="submenu-hdr">UI Interface</h6>
+                            <ul>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                        <i class="ti ti-box-multiple"></i><span>Base UI</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="ui-alerts.html">Alerts</a></li>
+                                        <li><a href="ui-accordion.html">Accordion</a></li>
+                                        <li><a href="ui-avatar.html">Avatar</a></li>
+                                        <li><a href="ui-badges.html">Badges</a></li>
+                                        <li><a href="ui-borders.html">Border</a></li>
+                                        <li><a href="ui-buttons.html">Buttons</a></li>
+                                        <li><a href="ui-buttons-group.html">Button Group</a></li>
+                                        <li><a href="ui-breadcrumb.html">Breadcrumb</a></li>
+                                        <li><a href="ui-cards.html">Card</a></li>
+                                        <li><a href="ui-carousel.html">Carousel</a></li>
+                                        <li><a href="ui-colors.html">Colors</a></li>
+                                        <li><a href="ui-dropdowns.html">Dropdowns</a></li>
+                                        <li><a href="ui-grid.html">Grid</a></li>
+                                        <li><a href="ui-images.html">Images</a></li>
+                                        <li><a href="ui-lightbox.html">Lightbox</a></li>
+                                        <li><a href="ui-media.html">Media</a></li>
+                                        <li><a href="ui-modals.html">Modals</a></li>
+                                        <li><a href="ui-offcanvas.html">Offcanvas</a></li>
+                                        <li><a href="ui-pagination.html">Pagination</a></li>
+                                        <li><a href="ui-popovers.html">Popovers</a></li>
+                                        <li><a href="ui-progress.html">Progress</a></li>
+                                        <li><a href="ui-placeholders.html">Placeholders</a></li>
+                                        <li><a href="ui-spinner.html">Spinner</a></li>
+                                        <li><a href="ui-sweetalerts.html">Sweet Alerts</a></li>
+                                        <li><a href="ui-nav-tabs.html">Tabs</a></li>
+                                        <li><a href="ui-toasts.html">Toasts</a></li>
+                                        <li><a href="ui-tooltips.html">Tooltips</a></li>
+                                        <li><a href="ui-typography.html">Typography</a></li>
+                                        <li><a href="ui-video.html">Video</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                        <i class="ti ti-chart-treemap"></i><span>Advanced UI</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="ui-ribbon.html">Ribbon</a></li>
+                                        <li><a href="ui-clipboard.html">Clipboard</a></li>
+                                        <li><a href="ui-drag-drop.html">Drag & Drop</a></li>
+                                        <li><a href="ui-rangeslider.html">Range Slider</a></li>
+                                        <li><a href="ui-rating.html">Rating</a></li>
+                                        <li><a href="ui-text-editor.html">Text Editor</a></li>
+                                        <li><a href="ui-counter.html">Counter</a></li>
+                                        <li><a href="ui-scrollbar.html">Scrollbar</a></li>
+                                        <li><a href="ui-stickynote.html">Sticky Note</a></li>
+                                        <li><a href="ui-timeline.html">Timeline</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);"><i class="ti ti-chart-dots"></i>
+                                        <span>Charts</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="chart-apex.html">Apex Charts</a></li>
+                                        <li><a href="chart-js.html">Chart Js</a></li>
+                                        <li><a href="chart-morris.html">Morris Charts</a></li>
+                                        <li><a href="chart-flot.html">Flot Charts</a></li>
+                                        <li><a href="chart-peity.html">Peity Charts</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);"><i class="ti ti-file"></i>
+                                        <span>Icons</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="icon-fontawesome.html">Fontawesome Icons</a></li>
+                                        <li><a href="icon-feather.html">Feather Icons</a></li>
+                                        <li><a href="icon-ionic.html">Ionic Icons</a></li>
+                                        <li><a href="icon-material.html">Material Icons</a></li>
+                                        <li><a href="icon-pe7.html">Pe7 Icons</a></li>
+                                        <li><a href="icon-simpleline.html">Simpleline Icons</a></li>
+                                        <li><a href="icon-themify.html">Themify Icons</a></li>
+                                        <li><a href="icon-weather.html">Weather Icons</a></li>
+                                        <li><a href="icon-typicon.html">Typicon Icons</a></li>
+                                        <li><a href="icon-flag.html">Flag Icons</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);">
+                                        <i class="ti ti-pencil"></i><span>Forms</span><span class="menu-arrow"></span>
+                                    </a>
+                                    <ul>
+                                        <li class="submenu submenu-two">
+                                            <a href="javascript:void(0);">Form Elements<span class="menu-arrow inside-submenu"></span></a>
+                                            <ul>
+                                                <li><a href="form-basic-inputs.html">Basic Inputs</a></li>
+                                                <li><a href="form-checkbox-radios.html">Checkbox & Radios</a></li>
+                                                <li><a href="form-input-groups.html">Input Groups</a></li>
+                                                <li><a href="form-grid-gutters.html">Grid & Gutters</a></li>
+                                                <li><a href="form-select.html">Form Select</a></li>
+                                                <li><a href="form-mask.html">Input Masks</a></li>
+                                                <li><a href="form-fileupload.html">File Uploads</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="submenu submenu-two">
+                                            <a href="javascript:void(0);">Layouts<span class="menu-arrow inside-submenu"></span></a>
+                                            <ul>
+                                                <li><a href="form-horizontal.html">Horizontal Form</a></li>
+                                                <li><a href="form-vertical.html">Vertical Form</a></li>
+                                                <li><a href="form-floating-labels.html">Floating Labels</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="form-validation.html">Form Validation</a></li>
+                                        <li><a href="form-select2.html">Select2</a></li>
+                                        <li><a href="form-wizard.html">Form Wizard</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);"><i class="ti ti-layout"></i><span>Tables</span><span class="menu-arrow"></span></a>
+                                    <ul>
+                                        <li><a href="tables-basic.html">Basic Tables </a></li>
+                                        <li><a href="data-tables.html">Data Table </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h6 class="submenu-hdr">Help</h6>
+                            <ul>
+                                <li><a href="javascript:void(0);"><i class="ti ti-file-type-doc"></i><span>Documentation</span></a></li>
+                                <li><a href="javascript:void(0);"><i class="ti ti-status-change"></i><span>Changelog v1.0</span></a></li>
+                                <li class="submenu">
+                                    <a href="javascript:void(0);"><i class="ti ti-brand-databricks"></i><span>Multi Level</span><span class="menu-arrow"></span></a>
+                                    <ul>
+                                        <li><a href="javascript:void(0);">Level 1.1</a></li>
+                                        <li class="submenu submenu-two">
+											<a href="javascript:void(0);">Level 1.2<span class="menu-arrow inside-submenu"></span></a>
+                                            <ul>
+                                                <li><a href="javascript:void(0);">Level 2.1</a></li>
+                                                <li class="submenu submenu-two submenu-three">
+													<a href="javascript:void(0);">Level 2.2<span class="menu-arrow inside-submenu inside-submenu-two"></span></a>
+                                                    <ul>
+                                                        <li><a href="javascript:void(0);">Level 3.1</a></li>
+                                                        <li><a href="javascript:void(0);">Level 3.2</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /Sidebar -->
+
+        <div class="page-wrapper">
+            <div class="content">
+                <div class="row">
+                    <div class="col-xxl-3 col-xl-4">
+                        <div class="card position-sticky start-0 top-0 bottom-0">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="avatar avatar-xxl me-2 flex-shrink-0">
+                                        <img src="assets/img/patients/patient-16.jpg" alt="Img">
+                                    </span>
+                                    <div class="d-block">
+                                        <span class="badge badge-primary mb-1">Out Patient</span>
+                                        <h5 class="mb-1 fw-semibold">Reyan Verol</h5>
+                                        <p>Last Visited : 24 Jan</p>
+                                    </div>
+                                </div>
+								<hr>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">DOB</h6>
+                                            <span>10 Jan 1991</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">Gender</h6>
+                                            <span>Male</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">Age</h6>
+                                            <span>24</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">Blood Group</h6>
+                                            <span>O+ve</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">Marital status</h6>
+                                            <span>Married</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">State</h6>
+                                            <span>European</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">City</h6>
+                                            <span>Berlin</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">Referred By</h6>
+                                            <span>Dr Antonio</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">Hospital</h6>
+                                            <span>Arive Clinic</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">Department</h6>
+                                            <span>Cardiology</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="mb-3">
+                                            <h6 class="mb-1 fw-semibold">Location</h6>
+                                            <span>8/15 Francis street, UK 454787</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <div>
+                                                <h6 class="mb-1 fw-semibold">Phone Number</h6>
+                                                <span>+1 54556 45454</span>
+                                            </div>
+                                            <a href="javascript:void(0);" class="badge badge-soft-primary">Copy</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <h6 class="mb-1 fw-semibold">Email</h6>
+                                                <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b5c7d0ccd4dadbf5d0cdd4d8c5d9d09bd6dad8">[email&#160;protected]</a></span>
+                                            </div>
+                                            <a href="javascript:void(0);" class="badge badge-soft-primary">Copy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3 pt-3 border-top page-link-group">
+                                    <a href="patient-details.html" class="btn bg-light-500 w-100 d-flex align-items-center justify-content-center active mb-2">Patient Profile</a>
+                                    <a href="patient-billing-details.html" class="btn bg-light-500 w-100 d-flex align-items-center justify-content-center mb-2">Billings</a>
+                                    <a href="patient-document-details.html" class="btn bg-light-500 w-100 d-flex align-items-center justify-content-center mb-2">Documents</a>
+                                    <a href="patient-insurance-details.html" class="btn bg-light-500 w-100 d-flex align-items-center justify-content-center">Insurance</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xxl-9 col-xl-8">
+                        <div class="d-flex align-items-center justify-content-between flex-wrap">
+                            <div class="searchinputs mb-3">
+                                <input type="text" placeholder="Search" class="form-control">
+                                <div class="search-addon">
+                                    <span class="group-text-icon"><i class="ti ti-search"></i></span>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center flex-wrap mb-3 row-gap-2">
+                                <a href="javascript:void(0);" class="d-flex align-items-center bg-danger-light px-3 py-2 rounded  me-2" data-bs-toggle="modal" data-bs-target="#add_visit">
+									<i class="ti ti-e-passport me-2"></i>
+									Add Visit
+								</a>
+                                <a href="javascript:void(0);" class="d-flex align-items-center bg-success-light px-3 py-2 rounded me-2" data-bs-toggle="modal" data-bs-target="#add_test">
+									<i class="ti ti-calendar-bolt me-2"></i>
+									Order Test
+								</a>
+                                <a href="javascript:void(0);" class="d-flex align-items-center bg-warning-light px-3 py-2 rounded" data-bs-toggle="modal" data-bs-target="#add_appointment">
+									<i class="ti ti-test-pipe me-2"></i>
+									Add Appointments
+								</a>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center justify-content-between flex-wrap">
+                                <ul class="tab-links d-flex align-items-center flex-wrap">
+                                    <li class="nav-link active p-0 me-2 mb-2"><a href="#patient_overview">Patient Overview</a></li>
+                                    <li class="nav-link p-0 me-2 mb-2"><a href="#vitals">Vitals</a></li>
+                                    <li class="nav-link p-0 me-2 mb-2"><a href="#lab_test">Lab Result</a></li>
+                                    <li class="nav-link p-0 me-2 mb-2"><a href="#prescription">Prescriptions</a></li>
+                                    <li class="nav-link p-0 me-2 mb-2"><a href="#visit_history">Visit History</a></li>
+                                    <li class="nav-link p-0 mb-2"><a href="#medical_history">Medical History</a></li>
+                                </ul>
+                                <div class="d-flex align-items-center mb-2">
+                                    <a href="chat.html" class="btn btn-icon bg-primary text-white me-2"><i class="ti ti-brand-hipchat"></i></a>
+                                    <a href="video-call.html" class="btn btn-icon bg-secondary text-white me-2"><i class="ti ti-video"></i></a>
+                                    <a href="audio-call.html" class="btn btn-icon bg-dark text-white"><i class="ti ti-phone-call"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="patient_overview">
+                            <div class="card-header">
+                                <h5>Appointments</h5>
+                            </div>
+                            <div class="card-body pb-0">
+                                <div class="row">
+                                    <div class="col-xxl-6">
+                                        <div class="card">
+											<div class="card-body pb-0">
+                                                <span class="badge bg-success mb-3">Upcoming</span>
+												<div class="row">
+													<div class="col-6 mb-3">
+														<h6 class="mb-1 fw-semibold">Department</h6>
+														<p>Cardio</p>
+													</div>
+													<div class="col-6 mb-3">
+														<h6 class="mb-1 fw-semibold">Doctor</h6>
+														<div class="d-flex align-items-center">
+															<a href="doctor-details.html" class="avatar avatar-sm"><img src="assets/img/doctors/doctor-02.jpg" class="img-fluid" alt="..."></a>
+															<div class="ms-2">
+																<p class="fw-medium fs-14 mb-0"><a href="doctor-details.html">Dr. Evans</a></p>
+															</div>
+														</div>
+													</div>
+													<div class="col-6 mb-3">
+														<h6 class="mb-1 fw-semibold">Date & time</h6>
+														<p>25 Jan, 08:00 AM</p>
+													</div>
+													<div class="col-6">
+														<h6 class="mb-1 fw-semibold">Session type</h6>
+														<p><i class="ti ti-video me-1"></i>Consultation<span class="badge bg-info ms-2">Paid</span></p>
+													</div>
+												</div>
+											</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 d-flex">
+                                        <div class="card">
+                                            <div class="card-body pb-0">
+                                                <span class="badge bg-success mb-3">Upcoming</span>
+												<div class="row">
+													<div class="col-6 mb-3">
+														<h6 class="mb-1 fw-semibold">Department</h6>
+														<p>ENT</p>
+													</div>
+													<div class="col-6 mb-3">
+														<h6 class="mb-1 fw-semibold">Doctor</h6>
+														<div class="d-flex align-items-center">
+															<a href="doctor-details.html" class="avatar avatar-sm"><img src="assets/img/doctors/doctor-06.jpg" class="img-fluid" alt="..."></a>
+															<div class="ms-2">
+																<p class="fw-medium fs-14 mb-0"><a href="doctor-details.html">Dr. Brown</a></p>
+															</div>
+														</div>
+													</div>
+													<div class="col-6 mb-3">
+														<h6 class="mb-1 fw-semibold">Date & time</h6>
+														<p>26 Jan, 10:00 AM</p>
+													</div>
+													<div class="col-6 mb-3">
+														<h6 class="mb-1 fw-semibold">Session type</h6>
+														<p>Visit<span class="badge bg-info ms-2">Paid</span>
+														</p>
+													</div>
+												</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="vitals">
+                            <div class="card-header">
+                                <h5>Vital Signs</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-xxl-4 col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                                        <i class="ti ti-droplet-filled fs-16 text-dark"></i>
+                                                    </span>
+                                                    <div class="ms-2">
+                                                        <h6 class="mb-1 fw-semibold">Blood Pressure</h6>
+                                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-success me-1"></i>100/67 mmHg</p>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#past_data" class="fw-medium">Past Data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                                        <i class="ti ti-heart-bolt fs-16 text-dark"></i>
+                                                    </span>
+                                                    <div class="ms-2">
+                                                        <h6 class="mb-1 fw-semibold">Heart Rate</h6>
+                                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-danger me-1"></i>89 Bpm</p>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#past_data" class="fw-medium">Past Data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                                        <i class="ti ti-rainbow fs-16 text-dark"></i>
+                                                    </span>
+                                                    <div class="ms-2">
+                                                        <h6 class="mb-1 fw-semibold">SPO2</h6>
+                                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-success me-1"></i>98
+                                                            %</p>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#past_data" class="fw-medium">Past Data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                                        <i class="ti ti-user-share fs-16 text-dark"></i>
+                                                    </span>
+                                                    <div class="ms-2">
+                                                        <h6 class="mb-1 fw-semibold">Respiratory rate</h6>
+                                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-warning me-1"></i>24 rpm</p>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#past_data" class="fw-medium">Past Data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                                        <i class="ti ti-thermometer fs-16 text-dark"></i>
+                                                    </span>
+                                                    <div class="ms-2">
+                                                        <h6 class="mb-1 fw-semibold">Temperature</h6>
+                                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-danger me-1"></i>101 C</p>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#past_data" class="fw-medium">Past Data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                                        <i class="ti ti-man fs-16 text-dark"></i>
+                                                    </span>
+                                                    <div class="ms-2">
+                                                        <h6 class="mb-1 fw-semibold">Weight</h6>
+                                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-success me-1"></i>100 kg</p>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#past_data" class="fw-medium">Past Data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                                        <i class="ti ti-hand-move fs-16 text-dark"></i>
+                                                    </span>
+                                                    <div class="ms-2">
+                                                        <h6 class="mb-1 fw-semibold">Pulse</h6>
+                                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-success me-1"></i>97 %</p>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#past_data" class="fw-medium">Past Data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                                        <i class="ti ti-brand-superhuman fs-16 text-dark"></i>
+                                                    </span>
+                                                    <div class="ms-2">
+                                                        <h6 class="mb-1 fw-semibold">BMI</h6>
+                                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-success me-1"></i>17 bmw</p>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#past_data" class="fw-medium">Past Data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 col-sm-6">
+                                        <div class="card mb-3">
+                                            <div class="card-body p-3">
+                                                <div class="d-flex align-items-center mb-2">
+                                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                                        <i class="ti ti-user-share fs-16 text-dark"></i>
+                                                    </span>
+                                                    <div class="ms-2">
+                                                        <h6 class="mb-1 fw-semibold">Respiratory rate</h6>
+                                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-warning me-1"></i>24 rpm</p>
+                                                    </div>
+                                                </div>
+                                                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#past_data" class="fw-medium">Past Data</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h6 class="fw-semibold mb-1">Notes on Last Visit</h6>
+								<p>Low Blood Pressure with High Sugar Level, Temperature is high, Need to have a lab test for CPR and Echo </p>
+                            </div>
+                        </div>
+                        <div class="card" id="lab_test">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <h5>Lab Results</h5>
+                                <div class="d-flex align-items-center">
+                                    <a href="patient-lab-result.html" class="btn btn-sm btn-outline-light">View all</a>
+                                    <div class="owl-nav slide-nav2 text-end nav-control ms-3"></div>
+                                </div>
+                            </div>
+                            <div class="card-body pb-1">
+                                <div class="lab-result-slider owl-carousel">
+                                    <div class="card mb-3">
+                                        <div class="card-body p-3">
+                                            <div class="bg-light-300 p-3 rounded mb-3">
+                                                <div class="pb-3 mb-3 border-bottom">
+                                                    <span class="badge bg-success mb-3">Result Out</span>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-lg bg-secondary flex-shrink-0">
+                                                            <i class="ti ti-report-medical fs-16"></i>
+                                                        </span>
+                                                        <div class="ms-2 overflow-hidden">
+                                                            <h5 class="fw-semibold text-truncate mb-1">
+																Blood test
+                                                                <span>(for Diabeties)</span>
+                                                            </h5>
+                                                            <p>24 Jan 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fw-semibold mb-1">Refered By</h6>
+                                                    <div class="d-flex align-items-center">
+                                                        <a href="doctor-details.html" class="avatar avatar-sm"><img src="assets/img/doctors/doctor-02.jpg" class="img-fluid" alt="..."></a>
+                                                        <div class="ms-2">
+                                                            <p class="fw-medium fs-14 mb-0"><a href="doctor-details.html">Dr. Evans</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#lab_result_one" class="fw-medium text-decoration-underline">View Result</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body p-3">
+                                            <div class="bg-light-300 p-3 rounded mb-3">
+                                                <div class="pb-3 mb-3 border-bottom">
+                                                    <span class="badge bg-danger mb-3">Pending Result</span>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-lg bg-secondary flex-shrink-0">
+                                                            <i class="ti ti-report-medical fs-16"></i>
+                                                        </span>
+                                                        <div class="ms-2 overflow-hidden">
+                                                            <h5 class="fw-semibold text-truncate mb-1">Cardiac test
+                                                                <span>(Angio Procedure)</span>
+                                                            </h5>
+                                                            <p>14 Jan 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fw-semibold mb-1">Refered By</h6>
+                                                    <div class="d-flex align-items-center">
+                                                        <a href="doctor-details.html" class="avatar avatar-sm"><img src="assets/img/doctors/doctor-03.jpg" class="img-fluid" alt="..."></a>
+                                                        <div class="ms-2">
+                                                            <p class="fw-medium fs-14 mb-0"><a href="doctor-details.html">Dr. Laird</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#lab_result_two" class="fw-medium text-decoration-underline">View Result</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body p-3">
+                                            <div class="bg-light-300 p-3 rounded mb-3">
+                                                <div class="pb-3 mb-3 border-bottom">
+                                                    <span class="badge bg-success mb-3">Result Out</span>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-lg bg-secondary flex-shrink-0">
+                                                            <i class="ti ti-report-medical fs-16"></i>
+                                                        </span>
+                                                        <div class="ms-2 overflow-hidden">
+                                                            <h5 class="fw-semibold text-truncate mb-1">U1A <span>(for Liver Hepitates)</span></h5>
+                                                            <p>24 Jan 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fw-semibold mb-1">Refered By</h6>
+                                                    <div class="d-flex align-items-center">
+                                                        <a href="doctor-details.html" class="avatar avatar-sm"><img src="assets/img/doctors/doctor-04.jpg" class="img-fluid" alt="..."></a>
+                                                        <div class="ms-2">
+                                                            <p class="fw-medium fs-14 mb-0"><a href="doctor-details.html">Dr. Sara</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#lab_result_one" class="fw-medium text-decoration-underline">View Result</a>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body p-3">
+                                            <div class="bg-light-300 p-3 rounded mb-3">
+                                                <div class="pb-3 mb-3 border-bottom">
+                                                    <span class="badge bg-danger mb-3">Pending Result</span>
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="avatar avatar-lg bg-secondary flex-shrink-0">
+                                                            <i class="ti ti-report-medical fs-16"></i>
+                                                        </span>
+                                                        <div class="ms-2 overflow-hidden">
+                                                            <h5 class="fw-semibold text-truncate mb-1">Cardiac test
+                                                                <span>(Angio Procedure)</span>
+                                                            </h5>
+                                                            <p>14 Jan 2024</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h6 class="fw-semibold mb-1">Refered By</h6>
+                                                    <div class="d-flex align-items-center">
+                                                        <a href="doctor-details.html" class="avatar avatar-sm"><img src="assets/img/doctors/doctor-03.jpg" class="img-fluid" alt="..."></a>
+                                                        <div class="ms-2">
+                                                            <p class="fw-medium fs-14 mb-0"><a href="doctor-details.html">Dr. Laird</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#lab_result_two" class="fw-medium text-decoration-underline">View Result</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="prescription">
+                            <div class="card-header d-flex align-items-center justify-content-between flex-wrap pb-2">
+                                <h5 class="mb-2">Prescriptions</h5>
+                                <div class="d-flex align-items-center">
+                                    <a href="patient-prescription-details.html" class="btn btn-sm btn-outline-light">View all</a>
+                                </div>
+                            </div>
+                            <div class="card-body pb-1">
+                                <div class="card mb-3">
+                                    <div class="card-body p-3 pb-0">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6">
+                                                <div class="d-flex mb-3">
+                                                    <span class="avatar avatar-xl bg-light flex-shrink-0">
+                                                        <i class="ti ti-prescription text-dark fs-20"></i>
+                                                    </span>
+                                                    <div class="ms-2 overflow-hidden">
+                                                        <span class="badge badge-soft-primary mb-1">Paediatrics</span>
+                                                        <h5 class="mb-1 text-truncate fw-semibold">Dupixent + Entresto + Entyvio + Farxiga</h5>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="me-3">Medicines : 06</span>
+                                                            <span>Days : 4</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="mb-3">
+                                                        <p class="mb-1">Prescribed by : Dr.Adrian</p>
+                                                        <p>Patient Name : Martin</p>
+                                                    </div>
+                                                    <div class="dropdown mb-3">
+                                                        <a href="javascript:void(0);" class="btn btn-icon btn-secondary-light btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="ti ti-dots"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a class="dropdown-item edit-popup" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#prescription_details">
+																		<i class="ti ti-prescription me-2"></i>View Prescription
+																	</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-download me-2"></i>Download</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-body p-3 pb-0">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6">
+                                                <div class="d-flex mb-3">
+                                                    <span class="avatar avatar-xl bg-light flex-shrink-0">
+                                                        <i class="ti ti-prescription text-dark fs-20"></i>
+                                                    </span>
+                                                    <div class="ms-2 overflow-hidden">
+                                                        <span class="badge badge-soft-success mb-1">Cardiology</span>
+                                                        <h5 class="mb-1 text-truncate fw-semibold">Acetaminophen 20mg + Cymbalta 4mg</h5>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="me-3">Medicines : 12</span>
+                                                            <span>Days : 6</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="mb-3">
+                                                        <p class="mb-1">Prescribed by : Dr.Evans</p>
+                                                        <p>Patient Name : Richard</p>
+                                                    </div>
+                                                    <div class="dropdown mb-3">
+                                                        <a href="javascript:void(0);" class="btn btn-icon btn-secondary-light btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="ti ti-dots"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a class="dropdown-item edit-popup" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#prescription_details">
+																		<i class="ti ti-prescription me-2"></i>View Prescription
+																	</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-download me-2"></i>Download</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mb-3">
+                                    <div class="card-body p-3 pb-0">
+                                        <div class="row align-items-center">
+                                            <div class="col-lg-6">
+                                                <div class="d-flex mb-3">
+                                                    <span class="avatar avatar-xl bg-light flex-shrink-0">
+                                                        <i class="ti ti-prescription text-dark fs-20"></i>
+                                                    </span>
+                                                    <div class="ms-2 overflow-hidden">
+                                                        <span class="badge badge-soft-warning mb-1">Radiology</span>
+                                                        <h5 class="mb-1 text-truncate fw-semibold">Pantoprazole + Prednisone Rybelsus </h5>
+                                                        <div class="d-flex align-items-center">
+                                                            <span class="me-3">Medicines : 12</span>
+                                                            <span>Days : 6</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="mb-3">
+                                                        <p class="mb-1">Prescribed by : Dr.Brown</p>
+                                                        <p>Patient Name : Thomas</p>
+                                                    </div>
+                                                    <div class="dropdown mb-3">
+                                                        <a href="javascript:void(0);" class="btn btn-icon btn-secondary-light btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="ti ti-dots"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-right">
+                                                            <ul>
+                                                                <li>
+                                                                    <a class="dropdown-item edit-popup" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#prescription_details">
+																		<i class="ti ti-prescription me-2"></i>View Prescription
+																	</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="javascript:void(0);"><i class="ti ti-download me-2"></i>Download</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="visit_history">
+                            <div class="card-header d-flex align-items-center justify-content-between flex-wrap pb-2">
+                                <h5 class="mb-2">Visit History</h5>
+                                <div class="d-flex align-items-center flex-wrap">
+                                    <div class="dropdown me-2 mb-2">
+                                        <button class="btn btn-md btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+											This Week
+										</button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="javascript:void(0);">This Week</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">This Month</a></li>
+                                            <li><a class="dropdown-item" href="javascript:void(0);">This Year</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="dropdown me-2 mb-2">
+                                        <button class="btn btn-md btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+											All Departments
+										</button>
+                                        <ul class="dropdown-menu">
+                                            <li>
+												<a class="dropdown-item" href="javascript:void(0);">All Departments</a>
+                                            </li>
+                                            <li>
+												<a class="dropdown-item" href="javascript:void(0);">Dental Surgery</a>
+                                            </li>
+                                            <li>
+												<a class="dropdown-item" href="javascript:void(0);">Dermatology</a>
+											</li>
+                                        </ul>
+                                    </div>
+                                    <div class="owl-nav slide-nav3 text-end nav-control mb-2"></div>
+                                </div>
+                            </div>
+                            <div class="card-body pb-1">
+                                <div class="visit-history-slider owl-carousel">
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <a href="doctor-details.html" class="avatar avatar-md"><img src="assets/img/doctors/doctor-03.jpg" class="img-fluid" alt="..."></a>
+                                                    <div class="ms-2">
+                                                        <p class="fw-semibold fs-14 mb-0"><a href="doctor-details.html">Dr. Laird</a></p>
+                                                        <span>Cardiology</span>
+                                                    </div>
+                                                </div>
+                                                <div class="history-icons">
+                                                    <span class="avatar avatar-sm badge badge-soft-primary p-0 shadow-none me-1"><i class="ti ti-prescription fs-16"></i></span>
+                                                    <span class="avatar avatar-sm badge badge-soft-secondary p-0 shadow-none"><i class="ti ti-report-medical fs-16"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between mb-3">
+                                                <div class="col col-sm-4 border-end">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1 fw-semibold">Visit ID</h6>
+                                                        <p>71903174</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-4 border-end">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1 fw-semibold">Visited On</h6>
+                                                        <p>17 Jan 2024</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-4">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1 fw-semibold">Followup</h6>
+                                                        <p>5 Months</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-light-300 p-3 rounded">
+                                                <h6 class="mb-1">Notes</h6>
+                                                <p>Detailed information about the symptoms that brought the patient to the visit.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <a href="doctor-details.html" class="avatar avatar-md"><img src="assets/img/doctors/doctor-04.jpg" class="img-fluid" alt="..."></a>
+                                                    <div class="ms-2">
+                                                        <p class="fw-semibold fs-14 mb-0"><a href="doctor-details.html">Dr. Sara</a></p>
+                                                        <span>ENT</span>
+                                                    </div>
+                                                </div>
+                                                <div class="history-icons">
+                                                    <span class="avatar avatar-sm badge badge-soft-primary p-0 shadow-none me-1"><i class="ti ti-prescription fs-16"></i></span>
+                                                    <span class="avatar avatar-sm badge badge-soft-secondary p-0 shadow-none"><i class="ti ti-report-medical fs-16"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between mb-3">
+                                                <div class="col col-sm-4 border-end">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1 fw-semibold">Visit ID</h6>
+                                                        <p>62910462</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-4 border-end">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1 fw-semibold">Visited On</h6>
+                                                        <p>21 Jan 2024</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-4">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1 fw-semibold">Followup</h6>
+                                                        <p>3 Months</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-light-300 p-3 rounded">
+                                                <h6 class="mb-1">Notes</h6>
+                                                <p>Information provided to the patient regarding their condition and symptoms</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card mb-3">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                                <div class="d-flex align-items-center">
+                                                    <a href="doctor-details.html" class="avatar avatar-md"><img src="assets/img/doctors/doctor-05.jpg" class="img-fluid" alt="..."></a>
+                                                    <div class="ms-2">
+                                                        <p class="fw-semibold fs-14 mb-0"><a href="doctor-details.html">Dr. Corine</a></p>
+                                                        <span>ENT</span>
+                                                    </div>
+                                                </div>
+                                                <div class="history-icons">
+                                                    <span class="avatar avatar-sm badge badge-soft-primary p-0 shadow-none me-1"><i class="ti ti-prescription fs-16"></i></span>
+                                                    <span class="avatar avatar-sm badge badge-soft-secondary p-0 shadow-none"><i class="ti ti-report-medical fs-16"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center justify-content-between mb-3">
+                                                <div class="col col-sm-4 border-end">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1 fw-semibold">Visit ID</h6>
+                                                        <p>73910454</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-4 border-end">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1 fw-semibold">Visited On</h6>
+                                                        <p>23 Jan 2024</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col col-sm-4">
+                                                    <div class="mb-2">
+                                                        <h6 class="mb-1 fw-semibold">Followup</h6>
+                                                        <p>7 Months</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-light-300 p-3 rounded">
+                                                <h6 class="mb-1">Notes</h6>
+                                                <p>Information provided to the patient regarding their condition.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" id="medical_history">
+                            <div class="card-header d-flex align-items-center justify-content-between">
+                                <h5>Medical History</h5>
+                                <div>
+                                    <div class="owl-nav slide-nav4 text-end nav-control"></div>
+                                </div>
+                            </div>
+                            <div class="card-body pb-1">
+                                <div class="medical-history-slider owl-carousel">
+                                    <div class="card bg-soft-primary border-0 shadow-none">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <span class="avatar  bg-primary me-2"><i class="ti ti-history"></i></span>
+                                                <h5>Headpain Oneside</h5>
+                                            </div>
+                                            <div class="mb-3">
+                                                <h6 class="text-xs fw-semibold mb-1">Treatment Started</h6>
+                                                <p>05 Jan 2024 (2yrs ago)</p>
+                                            </div>
+                                            <div class="bg-white rounded p-3 d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="fw-semibold mb-1">Xray_report_head</h6>
+                                                    <p class="text-xs">Size : 21.2 Kb</p>
+                                                </div>
+                                                <a href="javascript:void(0);"><i class="ti ti-download"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-soft-secondary border-0 shadow-none">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <span class="avatar bg-secondary me-2"><i class="ti ti-history"></i></span>
+                                                <h5>Throat Pain</h5>
+                                            </div>
+                                            <div class="mb-3">
+                                                <h6 class="text-xs fw-semibold mb-1">Treatment Started</h6>
+                                                <p>08 Jan 2024 (2yrs ago)</p>
+                                            </div>
+                                            <div class="bg-white rounded p-3 d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="fw-semibold mb-1">Xray_report_throat</h6>
+                                                    <p class="text-xs">Size : 28.4 Kb</p>
+                                                </div>
+                                                <a href="javascript:void(0);"><i class="ti ti-download"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-soft-warning border-0 shadow-none">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <span class="avatar bg-warning me-2"><i class="ti ti-history"></i></span>
+                                                <h5>Diabetes</h5>
+                                            </div>
+                                            <div class="mb-3">
+                                                <h6 class="text-xs fw-semibold mb-1">Treatment Started</h6>
+                                                <p>13 Jan 2024 (2yrs ago)</p>
+                                            </div>
+                                            <div class="bg-white rounded p-3 d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="fw-semibold mb-1">Blood_report</h6>
+                                                    <p class="text-xs">Size : 30.5 Kb</p>
+                                                </div>
+                                                <a href="javascript:void(0);"><i class="ti ti-download"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card bg-soft-info border-0 shadow-none">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <span class="avatar bg-info me-2"><i class="ti ti-history"></i></span>
+                                                <h5>Root Canal</h5>
+                                            </div>
+                                            <div class="mb-3">
+                                                <h6 class="text-xs fw-semibold mb-1">Treatment Started</h6>
+                                                <p>18 Jan 2024 (2yrs ago)</p>
+                                            </div>
+                                            <div class="bg-white rounded p-3 d-flex align-items-center justify-content-between">
+                                                <div>
+                                                    <h6 class="fw-semibold mb-1">Xray_report_teeth</h6>
+                                                    <p class="text-xs">Size :15.7 Kb</p>
+                                                </div>
+                                                <a href="javascript:void(0);"><i class="ti ti-download"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer -->
+                <div class="footer mb-3 mb-lg-4">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <p><span id="getFullYear"></span> &copy; DreamsEMR.</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-none d-sm-block">
+                                Design &amp; Developed by 
+								<a href="https://dreamstechnologies.com/" class="text-dark text-decoration-underline" target="_blank">Dreams Technologies</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /Footer -->
+            </div>
+        </div>
+
+
+    </div>
+    <!-- /Main Wrapper -->
+
+    <!-- Add Appointment -->
+    <div class="modal fade" id="add_appointment">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="page-title">
+                        <h4>New Appointment</h4>
+                    </div>
+                    <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ti ti-x"></i>
+                    </button>
+                </div>
+                <form action="patient-details.html">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Select Patient</label>
+                                    <select class="image-select">
+                                        <option data-image="assets/img/patients/patient-01.jpg">Gifford</option>
+                                        <option data-image="assets/img/patients/patient-02.jpg">Richard</option>
+                                        <option data-image="assets/img/patients/patient-03.jpg">Louella</option>
+                                        <option data-image="assets/img/patients/patient-04.jpg">Thomas</option>
+                                        <option data-image="assets/img/patients/patient-05.jpg">Shaver</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Patient Type</label>
+                                    <select class="select">
+                                        <option>Select</option>
+                                        <option>Out patient</option>
+                                        <option>In patient</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Select Department</label>
+                                    <select class="select">
+                                        <option>Anaesthesiology</option>
+                                        <option>Dental Surgery</option>
+                                        <option>ENT Surgery</option>
+                                        <option>Dermatology</option>
+                                        <option>Ophthalmology</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Select Doctor</label>
+                                    <select class="image-select">
+                                        <option data-image="assets/img/doctors/doctor-01.jpg">Dr. Cynthia</option>
+                                        <option data-image="assets/img/doctors/doctor-02.jpg">Dr. Evans</option>
+                                        <option data-image="assets/img/doctors/doctor-03.jpg">Dr. Laird</option>
+                                        <option data-image="assets/img/doctors/doctor-04.jpg">Dr. Sara</option>
+                                        <option data-image="assets/img/doctors/doctor-05.jpg">Dr. Corine</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Preffered Mode of Consultation</label>
+                                    <div class="row gx-3">
+                                        <div class="col-sm-3">
+                                            <input type="radio" class="btn-check" name="consultation" id="radio_3" checked="">
+                                            <label class="btn border rounded bg-light-200 w-100" for="radio_3">In-person</label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="radio" class="btn-check" name="consultation" id="radio_4">
+                                            <label class="btn border rounded bg-light-200 w-100" for="radio_4">Chat</label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="radio" class="btn-check" name="consultation" id="radio_5">
+                                            <label class="btn border rounded bg-light-200 w-100" for="radio_5">Video Call</label>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <input type="radio" class="btn-check" name="consultation" id="radio_6">
+                                            <label class="btn border rounded bg-light-200 w-100" for="radio_6">Audio Call</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label class="form-label">Date</label>
+                                    <div class="input-icon position-relative">
+                                        <span class="input-icon-addon">
+                                            <i class="ti ti-calendar"></i>
+                                        </span>
+                                        <input type="text" class="form-control datetimepicker" placeholder="18-07-2024">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    <label class="form-label">Start Time</label>
+                                    <div class="input-icon position-relative">
+                                        <span class="input-icon-addon">
+                                            <i class="ti ti-clock"></i>
+                                        </span>
+                                        <input type="text" class="form-control timepicker" placeholder="18-07-2024">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    <label class="form-label">End Time</label>
+                                    <div class="input-icon position-relative">
+                                        <span class="input-icon-addon">
+                                            <i class="ti ti-clock"></i>
+                                        </span>
+                                        <input type="text" class="form-control timepicker" placeholder="18-07-2024">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <label class="form-label">Reason</label>
+                                        <i class="ti ti-layout-board-split text-primary"></i>
+                                    </div>
+                                    <div class="input-form-tags modal-tags">
+                                        <div>
+                                            <input class="input-tags form-control" type="text" data-role="tagsinput" placeholder="+ Add new Reason" name="Label" value="Cold, Cough, Fever">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Quick Notes</label>
+                                    <textarea class="form-control" placeholder="Additional Information" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-0">
+                                    <label class="form-label">Mode of Payment</label>
+                                    <div class="row gx-2">
+                                        <div class="col-md-3">
+                                            <input type="radio" class="btn-check" name="payment" id="radio_7" checked="">
+                                            <label class="btn border rounded bg-light-200 w-100" for="radio_7">Paytm</label>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="radio" class="btn-check" name="payment" id="radio_8">
+                                            <label class="btn border rounded bg-light-200 w-100" for="radio_8">Cash</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <a href="javascript:void(0);" class="btn btn-outline-primary me-2" data-bs-dismiss="modal">Cancel</a>
+                            <button type="submit" class="btn btn-primary">Add Appointment</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Add Appointment -->
+
+    <!-- Add Test -->
+    <div class="modal fade" id="add_test">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="page-title d-flex align-items-center">
+                        <h4>Add Test</h4>
+                    </div>
+                    <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ti ti-x"></i>
+                    </button>
+                </div>
+                <form action="patient-details.html">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label"> Department</label>
+                                    <select class="select">
+                                        <option>Select</option>
+                                        <option>Anaesthesiology</option>
+                                        <option>Dental Surgery</option>
+                                        <option>Dermatology</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3">
+                                    <label class="form-label">Test Type</label>
+                                    <select class="select">
+                                        <option>Select</option>
+                                        <option>Out patient</option>
+                                        <option>In Patient</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3 input-form-tags input-form-tags-two">
+                                    <label class="form-label d-flex align-items-center justify-content-between">Reason For Visit</label>
+                                    <input type="text" class="input-tags form-control" data-role="tagsinput" placeholder="+Add Reason" value="Cold, Cough, Fever">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-0">
+                                    <label class="form-label">Quick Notes</label>
+                                    <textarea rows="4" class="form-control" placeholder="Extra Info"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer d-flex justify-content-end">
+                        <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</button>
+                        <button class="btn btn-primary" type="submit">Save Changes</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /Add Test -->
+
+    <!-- Add Visit -->
+    <div class="modal fade" id="add_visit">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="page-title d-flex align-items-center">
+                        <h4>Add New Visit</h4>
+                        <span class="badge bg-soft-primary ms-2">Visit ID : V4566988</span>
+                    </div>
+                    <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ti ti-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="modal-tab nav nav-pills" id="pills-tab2" role="tablist">
+                        <li class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" role="tab" aria-controls="pills-all" aria-selected="false">
+							<a href="javascript:void(0);">Visit Info</a>
+						</li>
+                        <li class="nav-link" id="pills-visit-tab" data-bs-toggle="pill" data-bs-target="#pills-visit" role="tab" aria-controls="pills-visit" aria-selected="false">
+							<a href="javascript:void(0);">Complaint & Assesments</a>
+						</li>
+                        <li class="nav-link" id="pills-consult-tab" data-bs-toggle="pill" data-bs-target="#pills-consult" role="tab" aria-controls="pills-consult" aria-selected="false">
+							<a href="javascript:void(0);">Documents</a>
+						</li>
+                    </ul>
+                    <div class="tab-content pt-0">
+                        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                            <form action="patient-details.html">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Select Patient</label>
+                                            <select class="select">
+                                                <option>Select</option>
+                                                <option>9892435 - Gifford</option>
+                                                <option>8977787 - Richard</option>
+                                                <option>4578787 - Louella</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Patient Type</label>
+                                            <select class="select">
+                                                <option>Select</option>
+                                                <option>Out patient</option>
+                                                <option>In Patient</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Select Department</label>
+                                            <select class="select">
+                                                <option>Select</option>
+                                                <option>Anaesthesiology</option>
+                                                <option>Dental Surgery</option>
+                                                <option>Dermatology</option>
+                                                <option>ENT Surgery</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Select Doctor</label>
+                                            <select class="select">
+                                                <option>Select</option>
+                                                <option>Dr. Cynthia</option>
+                                                <option>Dr. Evans</option>
+                                                <option>Dr. Laird</option>
+                                                <option>Dr. Sara</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Date of Visit</label>
+                                            <input type="text" class="form-control datetimepicker" placeholder="18-07-2024">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label class="form-label">Time Of Visit</label>
+                                            <input type="text" class="form-control timepicker" placeholder="18-07-2024">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3 input-form-tags input-form-tags-two">
+                                            <label class="form-label d-flex align-items-center justify-content-between">Reason For Visit</label>
+                                            <input type="text" class="input-tags form-control" data-role="tagsinput" placeholder="+Add Reason" value="Cold, Cough, Fever">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Mode of Payment</label>
+                                            <div class="row gx-2">
+                                                <div class="col-md-3">
+                                                    <input type="radio" class="btn-check" name="health_conditon" id="radio_1" checked="">
+                                                    <label class="btn border rounded bg-light-200 w-100" for="radio_1">Paytm</label>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <input type="radio" class="btn-check" name="health_conditon" id="radio_2">
+                                                    <label class="btn border rounded bg-light-200 w-100" for="radio_2">Cash</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="modal-footer p-0 pt-3 d-flex justify-content-end">
+                                            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</button>
+                                            <button class="btn btn-primary" type="submit">Save Visit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-visit" role="tabpanel" aria-labelledby="pills-visit-tab">
+                            <form action="patient-details.html">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Assessment</label>
+                                            <textarea rows="3" class="form-control" placeholder="Extra Info"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Treatment</label>
+                                            <textarea rows="3" class="form-control" placeholder="Extra Info"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Notes</label>
+                                            <textarea rows="3" class="form-control" placeholder="Extra Info"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <label class="form-label">Follow Up</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="modal-footer p-0 pt-3 d-flex justify-content-end">
+                                            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</button>
+                                            <button class="btn btn-primary" type="submit">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="pills-consult" role="tabpanel" aria-labelledby="pills-consult-tab">
+                            <form action="patient-details.html">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="mb-3">
+                                            <div class="form-check form-check-md d-flex align-items-center mb-1">
+                                                <input class="form-check-input" type="checkbox" checked="" id="check2">
+                                                <label class="form-check-label fw-semibold text-dark" for="check2">
+                                                    Documents if any
+                                                </label>
+                                            </div>
+                                            <div class="profile-uploader">
+                                                <span class="drag-upload-btn">
+                                                    <span class="upload-btn"><i class="bx bx-upload me-2"></i>Select Files</span>
+                                                    1 Document updated
+                                                </span>
+                                                <input type="file" class="form-control" multiple="" id="image_sign">
+                                                <div id="frames"></div>
+                                            </div>
+                                            <div class="d-flex flex-wrap align-items-center">
+                                                <div class="d-flex align-items-center justify-content-between bg-light-300 p-3 rounded mt-3 me-2">
+                                                    <h6 class="me-2">Xray_report_head <span class="text-muted fs-12 d-block mt-1">Size : 21.2 Kb</span></h6>
+                                                    <a href="javascript:void(0);" class="badge rounded-circle badge-sm p-1 bg-danger text-white"><i class="ti ti-x"></i></a>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between bg-light-300 p-3 rounded mt-3">
+                                                    <h6 class="me-2">Blood_report_head <span class="text-muted fs-12 d-block mt-1">Size : 30.5 Kb</span></h6>
+                                                    <a href="javascript:void(0);" class="text-success"><i class="ti ti-progress"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="modal-footer p-0 pt-3 d-flex justify-content-end">
+                                            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">Cancel</button>
+                                            <button class="btn btn-primary" type="submit">Save Changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Add Visit -->
+
+    <!-- Past data -->
+    <div class="modal fade" id="past_data">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content bg-white">
+                <div class="modal-header">
+                    <div class="page-title d-flex align-items-center">
+                        <h4>Visit 2 </h4>
+                        <div class="year-picker mb-0 mt-3 ms-sm-3 mt-sm-0">
+                            <span class="icon1"><i class="ti ti-chevron-left"></i></span>
+                            <input type="text" class="form-control yearpicker" value="Jan 2024">
+                            <span class="icon2"><i class="ti ti-chevron-right"></i></span>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center me-3">
+                            <a href="javascript:void(0);" class="btn btn-sm btn-outline-light bg-white btn-icon me-2" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="print" data-bs-original-title="Print">
+								<i class="ti ti-printer"></i>
+							</a>
+                            <a href="javascript:void(0);" class="btn btn-sm btn-outline-light bg-white btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="print" data-bs-original-title="Download">
+								<i class="ti ti-cloud-download"></i>
+							</a>
+                        </div>
+                        <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="ti ti-x"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="bg-light-300 p-3 pb-0">
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <div class="d-flex align-items-center gap-2 mb-3">
+                                    <span class="avatar avatar-md rounded text-white bg-secondary">
+                                        <i class="ti ti-history fs-24"></i>
+                                    </span>
+                                    <div>
+                                        <h6 class="fw-semibold mb-1">Visit : Neurology</h6>
+                                        <p>25 Jan 2024, 09:00am</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3">
+                                    <h6 class="fw-semibold mb-1">Doctor</h6>
+                                    <div class="d-flex align-items-center">
+                                        <span class="avatar avatar-sm"><img src="assets/img/doctors/doctor-01.jpg" class="img-fluid" alt="..."></span>
+                                        <div class="ms-2">
+                                            <p class="fw-semibold fs-14 mb-0"><a href="patient-details.html">Dr.Corine</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-light-300 rounded p-3 pb-0 mt-3">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                        <i class="ti ti-user-share fs-16 text-dark"></i>
+                                    </span>
+                                    <div class="ms-2">
+                                        <h6 class="mb-1 fw-semibold">Respiratory rate</h6>
+                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-warning me-1"></i>24 rpm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                        <i class="ti ti-heart-bolt fs-16 text-dark"></i>
+                                    </span>
+                                    <div class="ms-2">
+                                        <h6 class="mb-1 fw-semibold">Heart Rate</h6>
+                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-danger me-1"></i>89 Bpm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                        <i class="ti ti-rainbow fs-16 text-dark"></i>
+                                    </span>
+                                    <div class="ms-2">
+                                        <h6 class="mb-1 fw-semibold">SPO2</h6>
+                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-success me-1"></i>98 %</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                        <i class="ti ti-user-share fs-16 text-dark"></i>
+                                    </span>
+                                    <div class="ms-2">
+                                        <h6 class="mb-1 fw-semibold">Respiratory rate</h6>
+                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-warning me-1"></i>24 rpm</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                        <i class="ti ti-thermometer fs-16 text-dark"></i>
+                                    </span>
+                                    <div class="ms-2">
+                                        <h6 class="mb-1 fw-semibold">Temperature</h6>
+                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-danger me-1"></i>101 C</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                        <i class="ti ti-man fs-16 text-dark"></i>
+                                    </span>
+                                    <div class="ms-2">
+                                        <h6 class="mb-1 fw-semibold">Weight</h6>
+                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-success me-1"></i>100 kg</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                        <i class="ti ti-hand-move fs-16 text-dark"></i>
+                                    </span>
+                                    <div class="ms-2">
+                                        <h6 class="mb-1 fw-semibold">Pulse</h6>
+                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-success me-1"></i>97 %</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <span class="avatar avatar-lg bg-light-200 border flex-shrink-0">
+                                        <i class="ti ti-brand-superhuman fs-16 text-dark"></i>
+                                    </span>
+                                    <div class="ms-2">
+                                        <h6 class="mb-1 fw-semibold">BMI</h6>
+                                        <p class="d-flex align-items-center"><i class="ti ti-circle-filled fs-6 text-success me-1"></i>17 bmw</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Past data -->
+
+    <!-- Lab Result -->
+    <div class="modal fade" id="lab_result_one">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="page-title d-flex align-items-center">
+                        <h4>View Report</h4>
+                    </div>
+                    <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ti ti-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="bg-light-200 rounded p-3 d-md-flex align-items-center justify-content-between flex-wrap mb-3 pb-1">
+                        <div class="mb-2">
+                            <h5>25 Jan 2023</h5>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <button type="button" class="btn btn-primary me-2"><i class="ti ti-download me-2"></i>Download</button>
+                            <button type="button" class="btn btn-outline-light bg-white btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="print" data-bs-original-title="Print">
+                                <i class="ti ti-printer"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="border rounded p-lg-4 p-3">
+                        <div class="d-flex align-items-start flex-wrap pb-3 mb-3 border-bottom">
+                            <div class="flex-shrink-0">
+                                <span><img src="assets/img/icons/hospital-logo.svg" alt="Img"></span>
+                            </div>
+                            <div class="flex-grow-1 text-center">
+                                <div class="mb-3">
+                                    <h4>Dream’s IMSR & Hospitals</h4>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="fs-16 fw-semibold">
+										(Affiliated to Dreams Hospitals & Research) <br>
+                                        16, Wardlow, Buxton, Derbyshire, SK17 8RW. Phone : 01298 872268
+                                    </p>
+                                </div>
+                                <p>Monday to Sunday - 09:30am to 12:00pm</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="avatar avatar-xxl flex-shrink-0 border me-2">
+                                        <span class="d-flex"><img src="assets/img/icons/hospital-icon.svg" alt="Img"></span>
+                                    </div>
+                                    <div class="d-block">
+                                        <h5 class="fw-semibold mb-1">Dream’s Medical Center</h5>
+                                        <h6 class="fw-semibold mb-1">Dr. Sandy Maria</h6>
+                                        <p>MD Aerologist. MBBS,MS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-4">
+                                    <div>
+                                        <p class="d-flex align-items-center justify-content-lg-end mb-1">
+											<span class="fw-semibold me-1">Test Type :</span>
+											CBC
+                                        </p>
+                                        <p class="d-flex align-items-center justify-content-lg-end mb-1">
+											<span class="fw-semibold me-1">Collected On :</span>
+											25 Jan 2024, 07:00</p>
+                                        <p class="d-flex align-items-center justify-content-lg-end mb-0">
+											<span class="fw-semibold me-1">Reported On : </span>
+											25 Jan 2024, 11:00 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="mb-2">
+                                <h6>Patient Details</h6>
+                            </div>
+                            <div class="bg-light-300 p-2 pb-0 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="flex-shrink-0 mb-2">
+                                    <h5>M.Reyan Verol</h5>
+                                </div>
+                                <div class="d-flex align-items-center flex-wrap mb-2">
+                                    <p class="mb-0 me-2">28Y / Male</p>
+                                    <p class="mb-0 me-2">Blood : O+ve</p>
+                                    <p class="mb-0 me-2">Patient / Consult ID : OP1245654 / C243546566</p>
+                                    <p>Type : Outpatient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-center mb-2">Complete Blood Count(CBC)</h3>
+                            <p class="fw-semibold">Primary Test Type : <span class="text-dark">Blood</span> </p>
+                        </div>
+                        <div class="table-responsive reports-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Investigation</th>
+                                        <th>Result</th>
+                                        <th>Reference Value</th>
+                                        <th>Unit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h6>HEMOGLOBIN</h6>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">Hemoglobin (Hb)</span>
+                                        </td>
+                                        <td class="text-info">
+                                            <p class="d-flex align-items-center">12.5<span class="badge badge-soft-primary ms-2">Low</span></p>
+                                        </td>
+                                        <td>13.0 - 17.0</td>
+                                        <td>g/dL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h6>RBC COUNT</h6>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>Total RBC Count</span>
+                                        </td>
+                                        <td>
+                                            <p>5.2</p>
+                                        </td>
+                                        <td>4.5 - 5.5</td>
+                                        <td>mill/cumm</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h6>BLOOD INDICES</h6>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">Packed Cell Volume (PCV)</span>
+                                        </td>
+                                        <td class="text-danger">
+                                            <p class="d-flex align-items-center">12.5<span class="badge badge-soft-danger ms-2">High</span></p>
+                                        </td>
+                                        <td>40 - 50</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">Mean Corpuscular Volume (MCV)</span>
+                                            <span class="d-block fs-12 fw-semibold">Calculated</span>
+                                        </td>
+                                        <td>
+                                            <p>87.75</p>
+                                        </td>
+                                        <td>83 - 101</td>
+                                        <td>fL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">MCH</span>
+                                            <span class="d-block fs-12 fw-semibold">Calculated</span>
+                                        </td>
+                                        <td>
+                                            <p>27.72</p>
+                                        </td>
+                                        <td>27 - 32</td>
+                                        <td>pg</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">MCHC</span>
+                                            <span class="d-block fs-12 fw-semibold">Calculated</span>
+                                        </td>
+                                        <td>
+                                            <p>32.8</p>
+                                        </td>
+                                        <td>32.5 - 34.5</td>
+                                        <td>g/dL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">RDW</span>
+                                        </td>
+                                        <td>
+                                            <p>13.6</p>
+                                        </td>
+                                        <td>11.6 - 14.0</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h6>WBC COUNT</h6>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semiboldt">Total WBC Count</span>
+                                        </td>
+                                        <td>
+                                            <p>9000</p>
+                                        </td>
+                                        <td>4000 - 11000</td>
+                                        <td>cumm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row align-items-center mt-4">
+                            <div class="col-md-6">
+                                <div>
+                                    <h6 class="mb-1">Scan to View Prescription</h6>
+                                    <img src="assets/img/icons/qr-code.svg" alt="scan">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end">
+                                    <h6 class="mb-1">Dr. Sandy Maria</h6>
+                                    <p>Dept of Cardiology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Lab Result -->
+
+    <!-- Lab Result -->
+    <div class="modal fade" id="lab_result_two">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="page-title d-flex align-items-center">
+                        <h4>View Report</h4>
+                    </div>
+                    <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ti ti-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="bg-light-200 rounded p-3 d-md-flex align-items-center justify-content-between flex-wrap mb-3 pb-1">
+                        <div class="mb-2">
+                            <h5>25 Jan 2023</h5>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <button type="button" class="btn btn-primary me-2"><i class="ti ti-download me-2"></i>Download</button>
+                            <button type="button" class="btn btn-outline-light bg-white btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="print" data-bs-original-title="Print">
+                                <i class="ti ti-printer"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="border rounded p-lg-4 p-3">
+                        <div class="d-flex align-items-start flex-wrap pb-3 mb-3 border-bottom">
+                            <div class="flex-shrink-0">
+                                <span><img src="assets/img/icons/hospital-logo.svg" alt="Img"></span>
+                            </div>
+                            <div class="flex-grow-1 text-center">
+                                <div class="mb-3">
+                                    <h4>Dream’s IMSR & Hospitals</h4>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="fs-16 fw-semibold">
+										(Affiliated to Dreams Hospitals & Research) <br>
+                                        16, Wardlow, Buxton, Derbyshire, SK17 8RW. Phone : 01298 872268
+                                    </p>
+                                </div>
+                                <p>Monday to Sunday - 09:30am to 12:00pm</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="avatar avatar-xxl flex-shrink-0 border me-2">
+                                        <span class="d-flex"><img src="assets/img/icons/hospital-icon.svg" alt="Img"></span>
+                                    </div>
+                                    <div class="d-block">
+                                        <h5 class="fw-semibold mb-1">Dream’s Medical Center</h5>
+                                        <h6 class="fw-semibold mb-1">Dr. Sandy Maria</h6>
+                                        <p>MD Aerologist. MBBS,MS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-4">
+                                    <div>
+                                        <p class="d-flex align-items-center justify-content-lg-end mb-1">
+											<span class="fw-semibold me-1">Test Type :</span>
+											CBC
+                                        </p>
+                                        <p class="d-flex align-items-center justify-content-lg-end mb-1">
+											<span class="fw-semibold me-1">Collected On :</span>
+											25 Jan 2024, 07:00</p>
+                                        <p class="d-flex align-items-center justify-content-lg-end mb-0">
+											<span class="fw-semibold me-1">Reported On : </span>
+											25 Jan 2024, 11:00 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="mb-2">
+                                <h6>Patient Details</h6>
+                            </div>
+                            <div class="bg-light-300 p-2 pb-0 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="flex-shrink-0 mb-2">
+                                    <h5>M.Reyan Verol</h5>
+                                </div>
+                                <div class="d-flex align-items-center flex-wrap mb-2">
+                                    <p class="mb-0 me-2">28Y / Male</p>
+                                    <p class="mb-0 me-2">Blood : O+ve</p>
+                                    <p class="mb-0 me-2">Patient / Consult ID : OP1245654 / C243546566</p>
+                                    <p>Type : Outpatient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3 class="text-center mb-2">Complete Blood Count(CBC)</h3>
+                            <p class="fw-semibold">Primary Test Type : <span class="text-dark">Blood</span> </p>
+                        </div>
+                        <div class="table-responsive reports-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Investigation</th>
+                                        <th>Result</th>
+                                        <th>Reference Value</th>
+                                        <th>Unit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <h6>DIFFERENTIAL WBC COUNT</h6>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">Neutrophils</span>
+                                        </td>
+                                        <td>60</td>
+                                        <td>50 - 62</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">Lymphocytes</span>
+                                        </td>
+                                        <td>31</td>
+                                        <td>20 - 40</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">Eosinophils</span>
+                                        </td>
+                                        <td>01</td>
+                                        <td>00 - 06</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">Monocytes</span>
+                                        </td>
+                                        <td>07</td>
+                                        <td>00 - 10</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">Basophils</span>
+                                        </td>
+                                        <td>01</td>
+                                        <td>00 - 02</td>
+                                        <td>%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h6>PLATELET COUNT</h6>
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="text-muted fw-semibold">Platelet Count</span>
+                                        </td>
+                                        <td>
+                                            <p class="text-warning d-flex align-items-center">150000 <span class="badge badge-soft-warning ms-2">Borderline</span></p>
+                                        </td>
+                                        <td>150000 - 410000</td>
+                                        <td>cumm</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row align-items-center mt-4">
+                            <div class="col-md-6">
+                                <div>
+                                    <h6 class="mb-1">Scan to View Prescription</h6>
+                                    <img src="assets/img/icons/qr-code.svg" alt="scan">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end">
+                                    <h6 class="mb-1">Dr. Sandy Maria</h6>
+                                    <p>Dept of Cardiology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Lab Result -->
+
+    <!-- Prescription Detail -->
+    <div class="modal fade" id="prescription_details">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="page-title d-flex align-items-center">
+                        <h4>Prescription</h4>
+                    </div>
+                    <button type="button" class="btn-close custom-btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="ti ti-x"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="bg-light-200 rounded p-3 d-md-flex align-items-center justify-content-between flex-wrap mb-3 pb-1">
+                        <div class="mb-2">
+                            <h5>25 Jan 2023</h5>
+                        </div>
+                        <div class="d-flex align-items-center mb-2">
+                            <button type="button" class="btn btn-primary me-2"><i class="ti ti-download me-2"></i>Download</button>
+                            <button type="button" class="btn btn-outline-light bg-white btn-icon" data-bs-toggle="tooltip" data-bs-placement="top" aria-label="print" data-bs-original-title="Print">
+                                <i class="ti ti-printer"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="border rounded p-lg-4 p-3">
+                        <div class="d-flex align-items-start flex-wrap pb-3 mb-3 border-bottom">
+                            <div class="flex-shrink-0">
+                                <span><img src="assets/img/icons/hospital-logo.svg" alt="Img"></span>
+                            </div>
+                            <div class="flex-grow-1 text-center">
+                                <div class="mb-3">
+                                    <h4>Dream’s IMSR & Hospitals</h4>
+                                </div>
+                                <div class="mb-3">
+                                    <p class="fs-16 fw-semibold">
+										(Affiliated to Dreams Hospitals & Research) <br>
+                                        16, Wardlow, Buxton, Derbyshire, SK17 8RW. Phone : 01298 872268
+                                    </p>
+                                </div>
+                                <p>Monday to Sunday - 09:30am to 12:00pm</p>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <div class="d-flex align-items-center mb-4">
+                                    <div class="avatar avatar-xxl flex-shrink-0 border me-2">
+                                        <span class="d-flex"><img src="assets/img/icons/hospital-icon.svg" alt="Img"></span>
+                                    </div>
+                                    <div class="d-block">
+                                        <h5 class="fw-semibold mb-1">Dream’s Medical Center</h5>
+                                        <h6 class="fw-semibold mb-1">Dr. Sandy Maria</h6>
+                                        <p>MD Aerologist. MBBS,MS</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-4">
+                                    <div>
+                                        <p class="d-flex align-items-center justify-content-lg-end mb-1">
+											<span class="fw-semibold me-1">Department :</span>
+											Cardiology OP 
+										</p>
+                                        <p class="d-flex align-items-center justify-content-lg-end mb-1">
+											<span class="fw-semibold me-1">Prescribed on :</span>
+											25 Jan 2024, 07:00</p>
+                                        <p class="d-flex align-items-center justify-content-lg-end mb-0">
+											<span class="fw-semibold me-1">Consultation Type : </span>
+											Video
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="mb-2">
+                                <h6>Patient Details</h6>
+                            </div>
+                            <div class="bg-light-300 p-2 pb-0 d-flex align-items-center justify-content-between flex-wrap">
+                                <div class="flex-shrink-0 mb-2">
+                                    <h5>M.Reyan Verol</h5>
+                                </div>
+                                <div class="d-flex align-items-center flex-wrap mb-2">
+                                    <p class="mb-0 me-2">28Y / Male</p>
+                                    <p class="mb-0 me-2">Blood : O+ve</p>
+                                    <p class="mb-0 me-2">Patient / Consult ID : OP1245654 / C243546566</p>
+                                    <p>Type : Outpatient</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <h3>Cardiology Prescription</h3>
+                        </div>
+                        <div class="table-responsive reports-table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>SNO</th>
+                                        <th>Medecine Name</th>
+                                        <th>Dosage</th>
+                                        <th>Frequency</th>
+                                        <th>Duration</th>
+                                        <th>Timings</th>
+                                        <th>Instruction</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <h6 class="fw-semibold">Ecosprin 75MG [Asprin 75 MG Oral Tab]</h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="fw-semibold">75 mg</h6><span class="d-block text-muted fw-bold fs-12">Oral Tab</span>
+                                        </td>
+                                        <td>1-0-0-0</td>
+                                        <td>1 Months</td>
+                                        <td>Before Meal</td>
+                                        <td>Take in alternate das, with hot water</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <h6 class="fw-semibold">Axer 90MG Tab </h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="fw-semibold">90 mg</h6><span class="d-block text-muted fw-bold fs-12">Oral Tab</span>
+                                        </td>
+                                        <td>1-0-0-1</td>
+                                        <td>1 Months</td>
+                                        <td>Before Meal</td>
+                                        <td>Take in alternate das, with hot water</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <h6 class="fw-semibold">Ramistar XL 2.5 </h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="fw-semibold">75 ml</h6><span class="d-block text-muted fw-bold fs-12">Oral Tab</span>
+                                        </td>
+                                        <td>1-0-1-0</td>
+                                        <td>1 Months</td>
+                                        <td>Before Meal</td>
+                                        <td>Take in alternate das, with hot water</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <h6 class="fw-semibold">METSCORE </h6>
+                                        </td>
+                                        <td>
+                                            <h6 class="fw-semibold">90 mg</h6><span class="d-block text-muted fw-bold fs-12">Oral Tab</span>
+                                        </td>
+                                        <td>1-0-0-1</td>
+                                        <td>1 Months</td>
+                                        <td>Before Meal</td>
+                                        <td>Take in alternate das, with hot water</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="row align-items-center mt-4">
+                            <div class="col-md-6">
+                                <div>
+                                    <h6 class="mb-1">Scan to View Prescription</h6>
+                                    <img src="assets/img/icons/qr-code.svg" alt="scan">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-md-end">
+                                    <h6 class="mb-1">Dr. Sandy Maria</h6>
+                                    <p>Dept of Cardiology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Prescription Detail -->
+
+    <!-- jQuery -->
+    <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.7.1.min.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="assets/js/jquery.slimscroll.min.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/bootstrap.bundle.min.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+
+    <!-- Select2 JS -->
+    <script src="assets/plugins/select2/js/select2.min.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+
+    <!-- Bootstrap Tagsinput JS -->
+    <script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+
+    <!-- Datetimepicker JS -->
+    <script src="assets/js/moment.min.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="assets/js/owl.carousel.min.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js" type="d2bd8392274665294d4c62f5-text/javascript"></script>
+
+
+<script src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="d2bd8392274665294d4c62f5-|49" defer=""></script></body>
+
+</html>
